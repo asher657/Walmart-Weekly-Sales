@@ -1,2 +1,5 @@
-# Walmart-Weekly-Sales
-Report and code to predict the future weekly sales for Walmart
+# Predicting Weekly Sales for Walmart
+## Authors:
+* Claire Brekken
+* Rachel Brynsvold
+* Asher Khan
