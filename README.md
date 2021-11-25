@@ -17,4 +17,24 @@ Since store sales can vary week to week and year to year, we landed on using a l
 
 ### Findings
 One important thing we discovered is our model is only good at predicting the future weekly sales after performing SVD on the dataset. The mean WMAE for our model without SVD on the dataset is 1659.709, while the WMAE for our model with SVD on the dataset is 1608.776. We can conclude that this reduction in WMAE is due to the reduction of noise in the data.  Departments 25 and 31 were selected for visual illustration:
+![alt text](https://github.com/asher657/Walmart-Weekly-Sales/blob/main/NoiseReduction.png?raw=true)
+Interestingly, we do not see a big visual difference between the ‘with SVD’ and ‘without SVD’ charts for either department.  However, this relatively small difference in numerical values of Weekly_Sales has a meaningful effect on our WMAE value.
+
+### Results
+Run on a Lenovo P330, 3.70GHz, 16GB Memory
+| Fold | Accuracy (WAE) |
+| ---  | ---------------|
+|1|1941.581|
+|2|1363.462|
+|3|1382.497|
+|4|1527.280|
+|5|2310.469|
+|6|1635.783|
+|7|1682.747|
+|8|1399.604|
+|9|1418.078|
+|10|1426.258|
+|Average|1608.776|
+Total Run Time: 667.69908 minutes
+
 
